@@ -41,14 +41,19 @@
 
 #pragma mark - layout
 - (void)addSubViewConstraints {
-    NSInteger numer =  [self twoSumWithNum1:28 num2:6];
-    NSLog(@"---:%ld",numer);
+    
 }
 
 #pragma mark - event action
 - (void)addEventAction {
-
+    NSInteger numer =  [self twoSumWithNum1:28 num2:6];
+    NSLog(@"---:%ld",numer);
 }
+/*
+    1.不考虑进位，分别对各位数进行相加，结果为sum;
+    2.只考虑进位，结果为carry;
+    3.如果步骤2所得进位结果carry不为0，对步骤1所得sum，步骤2所得carry重复步骤1、 2、3；如果carry为0则结束，最终结果为步骤1所得sum;
+ */
 
 - (NSInteger )twoSumWithNum1:(NSInteger)num1 num2:(NSInteger)num2{
     if(num1==0){
