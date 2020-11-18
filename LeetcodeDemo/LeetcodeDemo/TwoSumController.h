@@ -5,25 +5,15 @@
 //  Created by apple on 2020/11/18.
 //
 
-#import <UIKit/UIKit.h>
+#import "DMBaseViewController.h"
 
-/* System */
-
-/* ViewController */
-
-/* View */
-
-/* Model */
-
-/* Util */
-
-/* NetWork InterFace */
-
-/* Vender */
+/*
+ 计算两整数a 、b之和
+ */
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TwoSumController : UIViewController
+@interface TwoSumController : DMBaseViewController
 
 @end
 

@@ -20,6 +20,7 @@
 #import "Masonry.h"
 #import "MJExtension.h"
 #import "UILabel+Chained.h"
+#import "UIButton+Chained.h"
 #import "CBNavigationController.h"
 #import "DMBaseViewController.h"
 #import "RouterManager.h"

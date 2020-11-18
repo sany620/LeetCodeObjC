@@ -9,6 +9,7 @@
 
 
 @interface TwoSumController ()
+@property (nonatomic, strong) UIButton *lookButton;
 
 @end
 
@@ -23,6 +24,7 @@
 #pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = [self.argDict valueForKey:@"navTitle"];
     [self commonInit];
     [self addEventAction];
 }
@@ -36,12 +38,17 @@
 
 #pragma mark - add subview
 - (void)addSubViews {
-
+    [self.view addSubview:self.lookButton];
 }
 
 #pragma mark - layout
 - (void)addSubViewConstraints {
-    
+    [self.lookButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.view.mas_top).offset(50);
+        make.left.mas_equalTo(self.view.mas_left).offset(20);
+        make.width.mas_equalTo(70);
+        make.height.mas_equalTo(45);
+    }];
 }
 
 #pragma mark - event action
@@ -67,6 +74,21 @@
     NSInteger carry = (num1 & num2) << 1;
     NSLog(@"-carry-:%ld",carry);
     return [self twoSumWithNum1:sum num2:carry];
+}
+
+#pragma mark -  Event Response
+- (void)lookButtonTouchUpInside:(UIButton *)sender{
+    
+}
+
+- (UIButton *)lookButton {
+    if (!_lookButton) {
+        _lookButton = UIButton.initButton(UIButtonTypeCustom).fdTitles(@"查看").fdTitlesColor(UIColor.blackColor).fdBackColor(UIColor.clearColor).fdFont(14);
+        _lookButton.layer.cornerRadius = 13;
+        _lookButton.layer.borderWidth = 1;
+        [_lookButton addTarget:self action:@selector(lookButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _lookButton;
 }
 
 

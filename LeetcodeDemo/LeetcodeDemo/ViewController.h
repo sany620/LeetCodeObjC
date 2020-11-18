@@ -5,9 +5,9 @@
 //  Created by apple on 2020/11/18.
 //
 
-#import <UIKit/UIKit.h>
+#import "DMBaseViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : DMBaseViewController
 
 
 @end

@@ -44,7 +44,7 @@ typedef void(^ReloadViewBlock)(void);
     self.view.backgroundColor = [UIColor whiteColor];
     self.view.frame = [[UIScreen mainScreen] bounds];
     if(self.navigationController.viewControllers.count > 1){
-        self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"ic_arrow_back" highImageName:@"ic_arrow_back" target:self action:@selector(backToVC)];
+        self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"nav_back" highImageName:@"nav_back" target:self action:@selector(backToVC)];
     }
     self.automaticallyAdjustsScrollViewInsets = NO;
 }

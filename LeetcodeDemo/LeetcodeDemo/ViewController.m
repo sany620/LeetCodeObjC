@@ -57,7 +57,7 @@
             return CGFLOAT_MIN;
         };
         [item setDidSelectRow:^(__kindof FDTableViewManage *tableVieManager, NSIndexPath *indexPath, __kindof FDItem *item) {
-            [RouterManager pushViewClassName:obj.viewName options:nil];
+            [RouterManager pushViewClassName:obj.viewName options:@{@"navTitle":obj.name}];
         }];
         [section addItem:item];
         [self.tableManage addSection:section];
