@@ -50,6 +50,7 @@
 		EFD2A4D72566105100BC65A1 /* AverageSpacingButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD2A4D52566105100BC65A1 /* AverageSpacingButtonView.m */; };
 		EFD2A4DB2566107500BC65A1 /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD2A4DA2566107500BC65A1 /* UIButton+ImageTitleSpacing.m */; };
 		EFD2A4DF2566109E00BC65A1 /* AverageBtModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD2A4DE2566109E00BC65A1 /* AverageBtModel.m */; };
+		EFFA098725662C7A0062CCC1 /* TrailingZerosController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFA098625662C7A0062CCC1 /* TrailingZerosController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +145,8 @@
 		EFD2A4DA2566107500BC65A1 /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
 		EFD2A4DD2566109E00BC65A1 /* AverageBtModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AverageBtModel.h; sourceTree = "<group>"; };
 		EFD2A4DE2566109E00BC65A1 /* AverageBtModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AverageBtModel.m; sourceTree = "<group>"; };
+		EFFA098525662C7A0062CCC1 /* TrailingZerosController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrailingZerosController.h; sourceTree = "<group>"; };
+		EFFA098625662C7A0062CCC1 /* TrailingZerosController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrailingZerosController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +209,8 @@
 				EF05D81D256509F300353BBD /* ViewController.m */,
 				EF05D86A25651BDA00353BBD /* TwoSumController.h */,
 				EF05D86B25651BDA00353BBD /* TwoSumController.m */,
+				EFFA098525662C7A0062CCC1 /* TrailingZerosController.h */,
+				EFFA098625662C7A0062CCC1 /* TrailingZerosController.m */,
 				EF05D83025650D6800353BBD /* data_js.json */,
 				EF05D822256509F400353BBD /* Assets.xcassets */,
 				EF05D824256509F400353BBD /* LaunchScreen.storyboard */,
@@ -614,6 +619,7 @@
 				EF05D8CB256528E300353BBD /* UIBarButtonItem+Items.m in Sources */,
 				EF05D842256515EB00353BBD /* UIViewController+FDTableView.m in Sources */,
 				EFD2A4DF2566109E00BC65A1 /* AverageBtModel.m in Sources */,
+				EFFA098725662C7A0062CCC1 /* TrailingZerosController.m in Sources */,
 				EF05D841256515EB00353BBD /* FDSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
