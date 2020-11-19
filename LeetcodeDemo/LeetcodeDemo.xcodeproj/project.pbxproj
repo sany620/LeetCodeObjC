@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,7 +39,6 @@
 		EF05D8B0256526EB00353BBD /* DMSASRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF05D8A9256526EB00353BBD /* DMSASRouter.m */; };
 		EF05D8B1256526EB00353BBD /* RouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF05D8AA256526EB00353BBD /* RouterManager.m */; };
 		EF05D8B52565276C00353BBD /* DMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF05D8B32565276C00353BBD /* DMBaseViewController.m */; };
-		EF05D8BA2565283C00353BBD /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EF05D8B92565283C00353BBD /* UIView+YYAdd.m */; };
 		EF05D8C12565289E00353BBD /* UIImage+XMUIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EF05D8BF2565289E00353BBD /* UIImage+XMUIImage.m */; };
 		EF05D8C6256528B900353BBD /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = EF05D8C4256528B900353BBD /* UIColor+Extend.m */; };
 		EF05D8CB256528E300353BBD /* UIBarButtonItem+Items.m in Sources */ = {isa = PBXBuildFile; fileRef = EF05D8CA256528E300353BBD /* UIBarButtonItem+Items.m */; };
@@ -48,6 +47,9 @@
 		EF05D8DD25653DCA00353BBD /* UIButton+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = EF05D8DC25653DCA00353BBD /* UIButton+Chained.m */; };
 		EF05D8E4256544AC00353BBD /* 001_twoSum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF05D8E3256544AC00353BBD /* 001_twoSum.jpg */; };
 		EF05D8F92565498D00353BBD /* ImgBrowserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF05D8F82565498D00353BBD /* ImgBrowserManager.m */; };
+		EFD2A4D72566105100BC65A1 /* AverageSpacingButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD2A4D52566105100BC65A1 /* AverageSpacingButtonView.m */; };
+		EFD2A4DB2566107500BC65A1 /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD2A4DA2566107500BC65A1 /* UIButton+ImageTitleSpacing.m */; };
+		EFD2A4DF2566109E00BC65A1 /* AverageBtModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD2A4DE2566109E00BC65A1 /* AverageBtModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,9 +123,6 @@
 		EF05D8AC256526EB00353BBD /* NSObject+Cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Cast.h"; sourceTree = "<group>"; };
 		EF05D8B32565276C00353BBD /* DMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBaseViewController.m; sourceTree = "<group>"; };
 		EF05D8B42565276C00353BBD /* DMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBaseViewController.h; sourceTree = "<group>"; };
-		EF05D8B82565283C00353BBD /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
-		EF05D8B92565283C00353BBD /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
-		EF05D8BC2565286800353BBD /* YYCategoriesMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCategoriesMacro.h; sourceTree = "<group>"; };
 		EF05D8BF2565289E00353BBD /* UIImage+XMUIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XMUIImage.m"; sourceTree = "<group>"; };
 		EF05D8C02565289E00353BBD /* UIImage+XMUIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XMUIImage.h"; sourceTree = "<group>"; };
 		EF05D8C4256528B900353BBD /* UIColor+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extend.m"; sourceTree = "<group>"; };
@@ -139,6 +138,12 @@
 		EF05D8E3256544AC00353BBD /* 001_twoSum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 001_twoSum.jpg; sourceTree = "<group>"; };
 		EF05D8F72565498D00353BBD /* ImgBrowserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImgBrowserManager.h; sourceTree = "<group>"; };
 		EF05D8F82565498D00353BBD /* ImgBrowserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImgBrowserManager.m; sourceTree = "<group>"; };
+		EFD2A4D52566105100BC65A1 /* AverageSpacingButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AverageSpacingButtonView.m; sourceTree = "<group>"; };
+		EFD2A4D62566105100BC65A1 /* AverageSpacingButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AverageSpacingButtonView.h; sourceTree = "<group>"; };
+		EFD2A4D92566107500BC65A1 /* UIButton+ImageTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleSpacing.h"; sourceTree = "<group>"; };
+		EFD2A4DA2566107500BC65A1 /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
+		EFD2A4DD2566109E00BC65A1 /* AverageBtModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AverageBtModel.h; sourceTree = "<group>"; };
+		EFD2A4DE2566109E00BC65A1 /* AverageBtModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AverageBtModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +328,7 @@
 		EF05D87F2565229D00353BBD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EFD2A4D42566105100BC65A1 /* Button */,
 				EF05D8E62565460000353BBD /* ImgBrowser */,
 				EF05D8A1256526EB00353BBD /* Router */,
 				EF05D8802565229D00353BBD /* NavigationController */,
@@ -365,9 +371,6 @@
 			children = (
 				EF05D8CE256528FD00353BBD /* UIView+Frame.h */,
 				EF05D8CD256528FD00353BBD /* UIView+Frame.m */,
-				EF05D8BC2565286800353BBD /* YYCategoriesMacro.h */,
-				EF05D8B82565283C00353BBD /* UIView+YYAdd.h */,
-				EF05D8B92565283C00353BBD /* UIView+YYAdd.m */,
 				EF05D89B2565235100353BBD /* UIView+Gradient.h */,
 				EF05D89C2565235100353BBD /* UIView+Gradient.m */,
 			);
@@ -422,6 +425,8 @@
 		EF05D8D12565291500353BBD /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				EFD2A4D92566107500BC65A1 /* UIButton+ImageTitleSpacing.h */,
+				EFD2A4DA2566107500BC65A1 /* UIButton+ImageTitleSpacing.m */,
 				EF05D8DB25653DCA00353BBD /* UIButton+Chained.h */,
 				EF05D8DC25653DCA00353BBD /* UIButton+Chained.m */,
 				EF05D8D22565291500353BBD /* UIButton+DuanMu.m */,
@@ -447,6 +452,17 @@
 			path = ImgBrowser;
 			sourceTree = "<group>";
 		};
+		EFD2A4D42566105100BC65A1 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				EFD2A4DD2566109E00BC65A1 /* AverageBtModel.h */,
+				EFD2A4DE2566109E00BC65A1 /* AverageBtModel.m */,
+				EFD2A4D52566105100BC65A1 /* AverageSpacingButtonView.m */,
+				EFD2A4D62566105100BC65A1 /* AverageSpacingButtonView.h */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -458,6 +474,7 @@
 				EF05D80F256509F300353BBD /* Sources */,
 				EF05D810256509F300353BBD /* Frameworks */,
 				EF05D811256509F300353BBD /* Resources */,
+				B32AD9CFC2C6C83C2401917D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -536,6 +553,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B32AD9CFC2C6C83C2401917D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeetcodeDemo/Pods-LeetcodeDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeetcodeDemo/Pods-LeetcodeDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LeetcodeDemo/Pods-LeetcodeDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -543,6 +577,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD2A4D72566105100BC65A1 /* AverageSpacingButtonView.m in Sources */,
 				EF05D8C12565289E00353BBD /* UIImage+XMUIImage.m in Sources */,
 				EF05D8B1256526EB00353BBD /* RouterManager.m in Sources */,
 				EF05D8982565232500353BBD /* NSString+Calculate.m in Sources */,
@@ -562,6 +597,7 @@
 				EF05D87D25651F5500353BBD /* UILabel+Chained.m in Sources */,
 				EF05D87725651D1C00353BBD /* RecordModel.m in Sources */,
 				EF05D8C6256528B900353BBD /* UIColor+Extend.m in Sources */,
+				EFD2A4DB2566107500BC65A1 /* UIButton+ImageTitleSpacing.m in Sources */,
 				EF05D829256509F400353BBD /* main.m in Sources */,
 				EF05D8AD256526EB00353BBD /* DMRouter.m in Sources */,
 				EF05D8AE256526EB00353BBD /* DMPPJIJinModuleFactory.m in Sources */,
@@ -573,11 +609,11 @@
 				EF05D8952565232500353BBD /* NSString+FDBlank.m in Sources */,
 				EF05D887256522DD00353BBD /* RegularValidateTool.m in Sources */,
 				EF05D8F92565498D00353BBD /* ImgBrowserManager.m in Sources */,
-				EF05D8BA2565283C00353BBD /* UIView+YYAdd.m in Sources */,
 				EF05D8832565229D00353BBD /* CBNavigationController.m in Sources */,
 				EF05D86225651A2A00353BBD /* NSArray+isBlankArray.m in Sources */,
 				EF05D8CB256528E300353BBD /* UIBarButtonItem+Items.m in Sources */,
 				EF05D842256515EB00353BBD /* UIViewController+FDTableView.m in Sources */,
+				EFD2A4DF2566109E00BC65A1 /* AverageBtModel.m in Sources */,
 				EF05D841256515EB00353BBD /* FDSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -715,7 +751,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7Q2PD9B5K9;
+				DEVELOPMENT_TEAM = 9NDAX97F76;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LeetcodeDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = LeetcodeDemo/Info.plist;
@@ -737,7 +773,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7Q2PD9B5K9;
+				DEVELOPMENT_TEAM = 9NDAX97F76;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LeetcodeDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = LeetcodeDemo/Info.plist;

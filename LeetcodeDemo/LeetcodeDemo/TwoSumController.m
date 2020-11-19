@@ -6,10 +6,10 @@
 //
 
 #import "TwoSumController.h"
+#import "AverageSpacingButtonView.h"
 
 
 @interface TwoSumController ()
-@property (nonatomic, strong) UIButton *lookButton;
 
 @end
 
@@ -32,29 +32,34 @@
 #pragma mark - initial Methods
 - (void)commonInit {
     self.view.backgroundColor = [UIColor whiteColor];
-    [self addSubViews];
-    [self addSubViewConstraints];
+    [self addSubViewsEvent];
 }
 
 #pragma mark - add subview
-- (void)addSubViews {
-    [self.view addSubview:self.lookButton];
-}
-
-#pragma mark - layout
-- (void)addSubViewConstraints {
-    [self.lookButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.view.mas_top).offset(50);
-        make.left.mas_equalTo(self.view.mas_left).offset(20);
-        make.width.mas_equalTo(70);
-        make.height.mas_equalTo(45);
-    }];
+- (void)addSubViewsEvent {
+    self.bottomMenuHidden = NO;
+    self.ideaString = @"1.不考虑进位，分别对各位数进行相加，结果为sum;\n2.只考虑进位，结果为carry;\n3.如果步骤2所得进位结果carry不为0，对步骤1所得sum，步骤2所得carry重复步骤1、 2、3；如果carry为0则结束，最终结果为步骤1所得sum;";
+    NSInteger numer =  [self twoSumWithNum1:28 num2:6];
+    NSLog(@"---:%ld",(long)numer);
 }
 
 #pragma mark - event action
 - (void)addEventAction {
-    NSInteger numer =  [self twoSumWithNum1:28 num2:6];
-    NSLog(@"---:%ld",numer);
+    __weak typeof(self)weakSelf = self;
+    self.parsingEventBlock = ^{
+        [weakSelf parsingEvent];
+    };
+    self.sourceCodeEventBlock = ^{
+        [weakSelf sourceCodeEvent];
+    };
+}
+#pragma mark - 解析
+-(void)parsingEvent{
+    self.ideaHidden = NO;
+}
+#pragma mark - 源码
+-(void)sourceCodeEvent{
+    [ImgBrowserManager showBrowserWithDataList:@[@"001_twoSum"] sourceView:self.view currentIndex:0];
 }
 /*
     1.不考虑进位，分别对各位数进行相加，结果为sum;
@@ -75,21 +80,5 @@
     NSLog(@"-carry-:%ld",carry);
     return [self twoSumWithNum1:sum num2:carry];
 }
-
-#pragma mark -  Event Response
-- (void)lookButtonTouchUpInside:(UIButton *)sender{
-    
-}
-
-- (UIButton *)lookButton {
-    if (!_lookButton) {
-        _lookButton = UIButton.initButton(UIButtonTypeCustom).fdTitles(@"查看").fdTitlesColor(UIColor.blackColor).fdBackColor(UIColor.clearColor).fdFont(14);
-        _lookButton.layer.cornerRadius = 13;
-        _lookButton.layer.borderWidth = 1;
-        [_lookButton addTarget:self action:@selector(lookButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
-    }
-    return _lookButton;
-}
-
 
 @end
