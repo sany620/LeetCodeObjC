@@ -15,14 +15,21 @@
     NSMutableArray *browserDataArr = [NSMutableArray array];
     YBImageBrowser *browser = [YBImageBrowser new];
     [dataSource enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj hasSuffix:@".MP4"]) {
-            if ([obj hasPrefix:@"http"]||[obj hasPrefix:@"https"]) {
-                
+        if ([obj hasPrefix:@"http"]||[obj hasPrefix:@"https"]) {
+            //判断是图片还是视频
+            NSString *extensionName = obj.pathExtension;
+            if ([extensionName.lowercaseString isEqualToString:@"mp4"]) {
+                YBIBVideoData *videoData = [YBIBVideoData new];
+                videoData.videoURL = [NSURL URLWithString:obj];
+                videoData.projectiveView = sourceView;
+                [browserDataArr addObject:videoData];
             }else{
-                
+                //图片
+                YBIBImageData *data = [YBIBImageData new];
+                data.imageURL = [NSURL URLWithString:obj];
+                data.projectiveView = sourceView;
+                [browserDataArr addObject:data];
             }
-        }else if ([obj hasPrefix:@"http"]||[obj hasPrefix:@"htts"]){
-            
         }else {
             // 本地图片
             YBIBImageData *data = [YBIBImageData new];
